@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="fullpage.min.css" />
+
+    <title>Shelflyne</title>
+  </head>
+  <body>
+    <div id="fullpage">
+      <div class="section " id="section0">
+        <div class="intro">
+          <h1>Navigation dots</h1>
+          <p>An easy and beautiful way to navigate throw the sections</p>
+        </div>
+      </div>
+      <div class="section" id="section1">
+          <div class="slide" id="slide1">
+          <div class="intro">
+            <h1>One</h1>
+          </div>
+        </div>
+
+          <div class="slide" id="slide2">
+          <h1>Two</h1>
+        </div>
+
+      </div>
+      <div class="section" id="section2">
+        <div class="intro">
+          <h1>Three</h1>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="fullpage.min.js"></script>  
+    <script type="text/javascript" src="fullpage.extensions.min.js"></script>
+    <script type="text/javascript" src="scrolloverflow.min.js"></script>
+    <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+            anchors: ['firstPage', 'secondPage', '3rdPage'],
+            sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
+            navigation: true,
+            navigationPosition: 'right',
+            navigationTooltips: ['First page', 'Second page', 'Third and last page']
+        });
+    </script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
