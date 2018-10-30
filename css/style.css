@@ -1,0 +1,111 @@
+.rp-branding {
+	padding-left: 20px;
+	height: auto;
+}
+
+.rp-branding img {
+	width: 150px;
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+.rp-overlayOpen,
+.rp-overlayClose {
+  margin: 0;
+  padding: 0;
+  height: 72px;
+  width: 72px;
+}
+
+.rp-iconMenu {
+  display: block;
+  width: 22px;
+  height: 17px;
+  border-radius: 0;
+  background: url("../media/ico-menu.svg?color=ccc") center;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+	background-color: #ccc;
+}
+
+.section {
+	color: #fff;
+	overflow: hidden;
+	background-position: 50% 0%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.section h2 {
+	font-size: 40px;
+	margin-bottom: 0.5em;
+}
+
+.section p {
+	max-width: 360px;
+}
+
+.section video {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	top:0;
+	right:0;
+	width: 100%;
+	height: 100%;
+	background-size: 100% 100%;
+	background-color: black; /* in case the video doesn't fit the whole page*/
+	background-image: /* our video */;
+	background-position: center center;
+	background-size: contain;
+	object-fit: cover; /*cover video background */
+	z-index:3;
+}
+
+/* Hiding video controls
+* See: https://css-tricks.com/custom-controls-in-html5-video-full-screen/
+* --------------------------------------- */
+video::-webkit-media-controls {
+	display:none !important;
+}
+
+.section-content {
+	position: absolute;
+	z-index: 4;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	/*
+	* Preventing flicker on some browsers
+	* See http://stackoverflow.com/a/36671466/1081396  or issue #183
+	*/
+	-webkit-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+#home-01 {
+	background-image: url('../media/shelflyne-home-wardrobe.jpg');
+}
+
+#home-02 {
+	background-image: url('../media/shelflyne-home-no-wiring.jpg');
+}
+
+#home-03 {
+	background-image: url('../media/shelflyne-home-no-polarity.jpg');
+}
+
+#home-04 {
+	background-image: url('../media/shelflyne-home-easy-install.jpg');
+}
+
+#home-05 {
+	background-image: url('../media/shelflyne-home-multi-install.jpg');
+}

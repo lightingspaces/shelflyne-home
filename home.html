@@ -1,62 +1,124 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" href="fullpage.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/fullpage.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
 
-    <title>Shelflyne</title>
-  </head>
-  <body>
-    <div id="fullpage">
-      <div class="section " id="section0">
-        <div class="intro">
-          <h1>Navigation dots</h1>
-          <p>An easy and beautiful way to navigate throw the sections</p>
-        </div>
-      </div>
-      <div class="section" id="section1">
-          <div class="slide" id="slide1">
-          <div class="intro">
-            <h1>One</h1>
-          </div>
-        </div>
+	<title>Shelflyne</title>
+</head>
+<body>
+	<!-- header -->
+  <header class="fixed-top">
+      <nav class="navbar navbar-dark p-0">
+      		<span class="rp-branding">
+      			<img src="media/logo-inverted.png" />
+      		</span>
+          <button class="navbar-toggler border-0 rp-overlayOpen" type="button" data-toggle="modal" data-target="#overlayMenu">
+             <span class="rp-iconMenu mx-auto"></span>
+          </button>
+      </nav>
+  </header>
 
-          <div class="slide" id="slide2">
-          <h1>Two</h1>
-        </div>
+	<div id="fullpage">
 
-      </div>
-      <div class="section" id="section2">
-        <div class="intro">
-          <h1>Three</h1>
-        </div>
-      </div>
-    </div>
+		<div class="section" id="home-01">
+			<!-- <video loop muted data-autoplay>
+				<source src="media/flowers.mp4" type="video/mp4">
+				<source src="media/flowers.webm" type="video/webm">
+			</video> -->
+			<div class="section-content">
+				<div class="container h-100">
+					<div class="row align-items-center h-100">
+						<div class="col-4 offset-1">
+							<h2></h2>
+							<p></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    <script type="text/javascript" src="fullpage.min.js"></script>  
-    <script type="text/javascript" src="fullpage.extensions.min.js"></script>
-    <script type="text/javascript" src="scrolloverflow.min.js"></script>
-    <script type="text/javascript">
-        var myFullpage = new fullpage('#fullpage', {
-            anchors: ['firstPage', 'secondPage', '3rdPage'],
-            sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
-            navigation: true,
-            navigationPosition: 'right',
-            navigationTooltips: ['First page', 'Second page', 'Third and last page']
-        });
-    </script>
+		<div class="section" id="home-02">
+			<div class="section-content">
+				<div class="container h-100">
+					<div class="row align-items-center h-100">
+						<div class="col-5 offset-1">
+							<h2>Say goodbye to soldering and wiring</h2>
+							<p>Shelflyne Home’s revolutionary patented design elimiates the need to solder and wire in the light source. Simply ensure the powered rail and Light Profile align and you’re finished. No soldering and no wiring allows a streamlined time-saving installation process, which translates to cost savings and zero stress for joinery makers and shopfitters.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section" id="home-03">
+			<div class="section-content">
+				<div class="container h-100">
+					<div class="row align-items-center h-100">
+						<div class="col-5 offset-1">
+							<h2>Polarity no longer matters</h2>
+							<p>Our patented FLIP technology eliminates polarity issues. Regardless of how the profile is mounted the Light Profile will light up. This translates to a foolproof installation and guarantees a premium finish everytime.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section" id="home-04">
+			<div class="section-content">
+				<div class="container h-100">
+					<div class="row align-items-center h-100">
+						<div class="col-5 offset-1">
+							<h2>Quick and easy installation</h2>
+							<p>Installation of shelf lighting has never been quicker and easier. Simply route the specified channel depth and width for each component and push in tightly to complete.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section" id="home-05">
+			<div class="section-content">
+				<div class="container h-100">
+					<div class="row align-items-center h-100">
+						<div class="col-5 offset-1">
+							<h2>Multiple installation</h2>
+							<p>Able to be mounted in a multitude of ways, and combinations throughout the home to light your space beautifully and seamlessly.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section" id="footer">
+			<div class="section-content">
+				<h2></h2>
+				<p></p>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/fullpage.min.js"></script>  
+	<script type="text/javascript" src="jsfullpage.extensions.min.js"></script>
+	<script type="text/javascript" src="js/scrolloverflow.min.js"></script>
+	<script type="text/javascript">
+		var myFullpage = new fullpage('#fullpage', {
+			licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+			anchors: ['one', 'two', 'three'],
+			navigation: true,
+			navigationPosition: 'left',
+			navigationTooltips: ['One', 'Two', 'Three']
+		});
+	</script>
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
 </html>
