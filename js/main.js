@@ -19,6 +19,7 @@
   var $menuLink = $(".menu a");
   $menuLink.on("click", function(e) {
     $hamburger.toggleClass("is-active");
+    fullpage_api.setAllowScrolling(true);
   });
 
 
