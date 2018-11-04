@@ -102,17 +102,35 @@ body {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: rgba(29, 29, 29, 0);
+	background-color: rgba(30,30,30,1);
 	width: 100%;
 	z-index: 0;
-	transition: background-color 2s ease;
-	transition-delay: 1s;
+	opacity: 0;
+	transition: opacity 2s ease;
+	transition-delay: 1.5s;
+}
+
+@media (min-width: 992px) {
+	.section-borders:after {
+		background: -moz-linear-gradient(left, rgba(30,30,30,1) 0%, rgba(30,30,30,1) 2%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(left, rgba(30,30,30,1) 0%,rgba(30,30,30,1) 2%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to right, rgba(30,30,30,1) 0%,rgba(30,30,30,1) 2%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	}
 }
 
 .section.active .section-borders:after {
-	background-color: rgba(29, 29, 29, 0.25);
-	transition: background-color 2s ease;
+	background-color: rgba(30,30,30,1);
+	opacity: 0.4;
+	transition: opacity 2s ease;
 	transition-delay: 1s;
+}
+
+@media (min-width: 992px) {
+	.section.active .section-borders:after {
+		background: -moz-linear-gradient(left, rgba(30,30,30,1) 0%, rgba(30,30,30,1) 2%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(left, rgba(30,30,30,1) 0%,rgba(30,30,30,1) 2%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to right, rgba(30,30,30,1) 0%,rgba(30,30,30,1) 2%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	}
 }
 
 .section-borders .section-borders-inside {
@@ -172,7 +190,7 @@ body {
 .section-borders .section-border-top,
 .section-borders .section-border-left {
 	transition: all 1s cubic-bezier(0.63, 0.04, 0.07, 0.96);
-	transition-delay: 1s;
+	transition-delay: 1.5s;
 }
 
 .section.active .section-borders .section-border-bottom,
@@ -247,7 +265,7 @@ body {
 
 @media (min-width: 992px) { 
 	.section h2 {
-		font-size: 40px;		
+		font-size: 48px;		
 		letter-spacing: -0.02em;
 	}
 }
@@ -295,9 +313,14 @@ body {
 
 .section.footer .section-content {
 	position: static;
-	margin-top: 120px;
-	margin-bottom: 120px;
 	transform: none;
+	margin-top: 120px;
+}
+
+@media (max-width: 991px) {
+	.section.footer .section-content {		
+		margin-bottom: 120px;
+	}
 }
 
 .section.footer .rp-footer-1,
@@ -353,7 +376,7 @@ body {
 	width: 100%;
 	height: 100%;
 	background-size: 100% 100%;
-	background-color: black;
+	background-color: transparent;
 	background-image: ;
 	background-position: center center;
 	background-size: contain;
@@ -381,24 +404,25 @@ video::-webkit-media-controls {
 	transform: translate3d(0,0,0);
 }
 
-#home-01 .section-background {
-	background-image: url('../media/shelflyne-home-wardrobe.jpg');
-}
-
-#home-02 video {
+#home-01 video {
 	object-position: 100% 50%;
 }
 
-#home-03 video {
+#home-02 video {
 	object-position: 60% 50%;
 }
 
-#home-04 .section-background {
+#home-03 .section-background {
 	background-image: url('../media/shelflyne-home-easy-install.jpg');
 }
 
-#home-05 .section-background {
+#home-04 .section-background {
 	background-image: url('../media/shelflyne-home-multi-install.jpg');
+}
+
+#home-05 .section-background {
+	background-image: url('../media/shelflyne-home-sizing.jpg');
+	background-position: 50% 100%;
 }
 
 
@@ -505,7 +529,7 @@ video::-webkit-media-controls {
 .hamburger-inner,
 .hamburger-inner:after,
 .hamburger-inner:before {
-	background-color: #fff;
+	background-color: #ccc;
 	border-radius: 0;
 	height: 2px;
 	width: 32px;
