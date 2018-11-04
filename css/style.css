@@ -163,14 +163,19 @@ body {
 	width: 100%;
 	z-index: 0;
 	opacity: 0;
+	-webkit-transition: opacity 2s ease;
+	-o-transition: opacity 2s ease;
 	transition: opacity 2s ease;
-	transition-delay: 1.5s;
+	-webkit-transition-delay: 1.5s;
+	     -o-transition-delay: 1.5s;
+	        transition-delay: 1.5s;
 }
 
 @media (min-width: 992px) {
-	.section-borders:after {
-		background: -moz-linear-gradient(left, rgba(30,30,30,1) 0%, rgba(30,30,30,1) 2%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+	.section-borders:after { /* FF3.6-15 */
 		background: -webkit-linear-gradient(left, rgba(30,30,30,1) 0%,rgba(30,30,30,1) 2%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: -webkit-gradient(linear, left top, right top, from(rgba(30,30,30,1)),color-stop(2%, rgba(30,30,30,1)),to(rgba(0,0,0,0)));
+		background: -o-linear-gradient(left, rgba(30,30,30,1) 0%,rgba(30,30,30,1) 2%,rgba(0,0,0,0) 100%);
 		background: linear-gradient(to right, rgba(30,30,30,1) 0%,rgba(30,30,30,1) 2%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	}
 }
@@ -178,14 +183,19 @@ body {
 .section.active .section-borders:after {
 	background-color: rgba(30,30,30,1);
 	opacity: 0.4;
+	-webkit-transition: opacity 2s ease;
+	-o-transition: opacity 2s ease;
 	transition: opacity 2s ease;
-	transition-delay: 1s;
+	-webkit-transition-delay: 1s;
+	     -o-transition-delay: 1s;
+	        transition-delay: 1s;
 }
 
 @media (min-width: 992px) {
-	.section.active .section-borders:after {
-		background: -moz-linear-gradient(left, rgba(30,30,30,1) 0%, rgba(30,30,30,1) 2%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+	.section.active .section-borders:after { /* FF3.6-15 */
 		background: -webkit-linear-gradient(left, rgba(30,30,30,1) 0%,rgba(30,30,30,1) 2%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: -webkit-gradient(linear, left top, right top, from(rgba(30,30,30,1)),color-stop(2%, rgba(30,30,30,1)),to(rgba(0,0,0,0)));
+		background: -o-linear-gradient(left, rgba(30,30,30,1) 0%,rgba(30,30,30,1) 2%,rgba(0,0,0,0) 100%);
 		background: linear-gradient(to right, rgba(30,30,30,1) 0%,rgba(30,30,30,1) 2%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	}
 }
@@ -246,45 +256,59 @@ body {
 .section-borders .section-border-right,
 .section-borders .section-border-top,
 .section-borders .section-border-left {
+	-webkit-transition: all 1s cubic-bezier(0.63, 0.04, 0.07, 0.96);
+	-o-transition: all 1s cubic-bezier(0.63, 0.04, 0.07, 0.96);
 	transition: all 1s cubic-bezier(0.63, 0.04, 0.07, 0.96);
-	transition-delay: 1.5s;
+	-webkit-transition-delay: 1.5s;
+	     -o-transition-delay: 1.5s;
+	        transition-delay: 1.5s;
 }
 
 .section.active .section-borders .section-border-bottom,
 .section.active .section-borders .section-border-right,
 .section.active .section-borders .section-border-top,
 .section.active .section-borders .section-border-left {
-	transition-delay: 0.3s;
+	-webkit-transition-delay: 0.3s;
+	     -o-transition-delay: 0.3s;
+	        transition-delay: 0.3s;
 }
 
 .section-borders .section-border-right {
 	-webkit-transform-origin: right center;
-	transform-origin: right center;
+	-ms-transform-origin: right center;
+	    transform-origin: right center;
 }
 
 .section-borders .section-border-left {
 	-webkit-transform-origin: left center;
-	transform-origin: left center;
+	-ms-transform-origin: left center;
+	    transform-origin: left center;
 }
 
 .section.active .section-borders .section-border-left,
 .section.active .section-borders .section-border-right {
-	transform: scale(0,1);
+	-webkit-transform: scale(0,1);
+	    -ms-transform: scale(0,1);
+	        transform: scale(0,1);
 }
 
 .section-borders .section-border-top {
 	-webkit-transform-origin: center top;
-	transform-origin: center top;
+	-ms-transform-origin: center top;
+	    transform-origin: center top;
 }
 
 .section-borders .section-border-bottom {
 	-webkit-transform-origin: center bottom;
-	transform-origin: center bottom;
+	-ms-transform-origin: center bottom;
+	    transform-origin: center bottom;
 }
 
 .section.active .section-borders .section-border-top,
 .section.active .section-borders .section-border-bottom {
-	transform: scale(1,0);
+	-webkit-transform: scale(1,0);
+	    -ms-transform: scale(1,0);
+	        transform: scale(1,0);
 }
 
 .section-borders .section-background {
@@ -308,7 +332,11 @@ body {
 	-ms-transform: translate3d(0,120px,0);
 	transform: translate3d(0,120px,0);
 	opacity: 0;
+	-webkit-transition: opacity 3s cubic-bezier(0.63, 0.04, 0.07, 0.96), -webkit-transform 3s cubic-bezier(0.63, 0.04, 0.07, 0.96);
+	transition: opacity 3s cubic-bezier(0.63, 0.04, 0.07, 0.96), -webkit-transform 3s cubic-bezier(0.63, 0.04, 0.07, 0.96);
+	-o-transition: transform 3s cubic-bezier(0.63, 0.04, 0.07, 0.96), opacity 3s cubic-bezier(0.63, 0.04, 0.07, 0.96);
 	transition: transform 3s cubic-bezier(0.63, 0.04, 0.07, 0.96), opacity 3s cubic-bezier(0.63, 0.04, 0.07, 0.96);
+	transition: transform 3s cubic-bezier(0.63, 0.04, 0.07, 0.96), opacity 3s cubic-bezier(0.63, 0.04, 0.07, 0.96), -webkit-transform 3s cubic-bezier(0.63, 0.04, 0.07, 0.96);
 }
 
 .section.active h2 {
@@ -316,8 +344,14 @@ body {
 	-ms-transform: translate3d(0,0px,0);
 	transform: translate3d(0,0px,0);
 	opacity: 1;   
-	transition: transform 3s cubic-bezier(0.63, 0.04, 0.07, 0.96), opacity 3s cubic-bezier(0.63, 0.04, 0.07, 0.96);
-	transition-delay: 1s;
+	-webkit-transition: opacity 3s cubic-bezier(0.63, 0.04, 0.07, 0.96), -webkit-transform 3s cubic-bezier(0.63, 0.04, 0.07, 0.96);   
+	transition: opacity 3s cubic-bezier(0.63, 0.04, 0.07, 0.96), -webkit-transform 3s cubic-bezier(0.63, 0.04, 0.07, 0.96);   
+	-o-transition: transform 3s cubic-bezier(0.63, 0.04, 0.07, 0.96), opacity 3s cubic-bezier(0.63, 0.04, 0.07, 0.96);   
+	transition: transform 3s cubic-bezier(0.63, 0.04, 0.07, 0.96), opacity 3s cubic-bezier(0.63, 0.04, 0.07, 0.96);   
+	transition: transform 3s cubic-bezier(0.63, 0.04, 0.07, 0.96), opacity 3s cubic-bezier(0.63, 0.04, 0.07, 0.96), -webkit-transform 3s cubic-bezier(0.63, 0.04, 0.07, 0.96);
+	-webkit-transition-delay: 1s;
+	     -o-transition-delay: 1s;
+	        transition-delay: 1s;
 }
 
 @media (min-width: 992px) { 
@@ -339,7 +373,11 @@ body {
 	-ms-transform: translate3d(0,120px,0);
 	transform: translate3d(0,120px,0);
 	opacity: 0;
+	-webkit-transition: opacity 3s cubic-bezier(0.63, 0.04, 0.07, 0.96), -webkit-transform 3s cubic-bezier(0.63, 0.04, 0.07, 0.96);
+	transition: opacity 3s cubic-bezier(0.63, 0.04, 0.07, 0.96), -webkit-transform 3s cubic-bezier(0.63, 0.04, 0.07, 0.96);
+	-o-transition: transform 3s cubic-bezier(0.63, 0.04, 0.07, 0.96), opacity 3s cubic-bezier(0.63, 0.04, 0.07, 0.96);
 	transition: transform 3s cubic-bezier(0.63, 0.04, 0.07, 0.96), opacity 3s cubic-bezier(0.63, 0.04, 0.07, 0.96);
+	transition: transform 3s cubic-bezier(0.63, 0.04, 0.07, 0.96), opacity 3s cubic-bezier(0.63, 0.04, 0.07, 0.96), -webkit-transform 3s cubic-bezier(0.63, 0.04, 0.07, 0.96);
 }
 
 @media (min-width: 992px) {
@@ -353,8 +391,14 @@ body {
 	-ms-transform: translate3d(0,0px,0);
 	transform: translate3d(0,0px,0);
 	opacity: 1;
-	transition: transform 3s cubic-bezier(0.63, 0.04, 0.07, 0.96), opacity 3s cubic-bezier(0.63, 0.04, 0.07, 0.96);	
-	transition-delay: 1.1s;
+	-webkit-transition: opacity 3s cubic-bezier(0.63, 0.04, 0.07, 0.96), -webkit-transform 3s cubic-bezier(0.63, 0.04, 0.07, 0.96);
+	transition: opacity 3s cubic-bezier(0.63, 0.04, 0.07, 0.96), -webkit-transform 3s cubic-bezier(0.63, 0.04, 0.07, 0.96);
+	-o-transition: transform 3s cubic-bezier(0.63, 0.04, 0.07, 0.96), opacity 3s cubic-bezier(0.63, 0.04, 0.07, 0.96);
+	transition: transform 3s cubic-bezier(0.63, 0.04, 0.07, 0.96), opacity 3s cubic-bezier(0.63, 0.04, 0.07, 0.96);
+	transition: transform 3s cubic-bezier(0.63, 0.04, 0.07, 0.96), opacity 3s cubic-bezier(0.63, 0.04, 0.07, 0.96), -webkit-transform 3s cubic-bezier(0.63, 0.04, 0.07, 0.96);	
+	-webkit-transition-delay: 1.1s;	
+	     -o-transition-delay: 1.1s;	
+	        transition-delay: 1.1s;
 }
 
 @media screen and (min-width: 1600px) {
@@ -370,7 +414,9 @@ body {
 
 .section.footer .section-content {
 	position: static;
-	transform: none;
+	-webkit-transform: none;
+	    -ms-transform: none;
+	        transform: none;
 	margin-top: 120px;
 }
 
@@ -437,7 +483,8 @@ body {
 	background-image: ;
 	background-position: center center;
 	background-size: contain;
-	object-fit: cover;
+	-o-object-fit: cover;
+	   object-fit: cover;
 	z-index: 0;
 }
 
@@ -462,11 +509,13 @@ video::-webkit-media-controls {
 }
 
 #home-01 video {
-	object-position: 100% 50%;
+	-o-object-position: 100% 50%;
+	   object-position: 100% 50%;
 }
 
 #home-02 video {
-	object-position: 60% 50%;
+	-o-object-position: 60% 50%;
+	   object-position: 60% 50%;
 }
 
 #home-03 .section-background {
@@ -526,6 +575,8 @@ video::-webkit-media-controls {
 	position: absolute;
 	display: block;
 	bottom: 0;
+	-webkit-transition: width 0.4s ease;
+	-o-transition: width 0.4s ease;
 	transition: width 0.4s ease;
 }
 
@@ -534,6 +585,8 @@ video::-webkit-media-controls {
 	left: 0;
 	top: 24px;
 	line-height: 1;
+	-webkit-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
 	transition: all 0.4s ease;
 	pointer-events: none;
 }
@@ -544,6 +597,8 @@ video::-webkit-media-controls {
 	padding: 0.5em 0;
 	color: #fff;
 	background-color: transparent;
+	-webkit-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
 	transition: all 0.2s ease;
 }
 
@@ -552,7 +607,8 @@ video::-webkit-media-controls {
 }
 
 .rp-contactForm .form-group .form-control:focus, .rp-contactForm .form-group .form-control.hasValue {
-	box-shadow: none;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
 	border-color: #ced4da;
 }
 
