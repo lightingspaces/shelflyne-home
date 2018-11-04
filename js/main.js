@@ -1,6 +1,10 @@
 (function($) {
   "use strict"; // Start of use strict
 
+  $(window).on('load', function(){
+    $("#preloader").delay(2000).fadeOut("slow");
+  });
+
   // Detect when form-control inputs are not empty
   $(".rp-contactForm .form-control").on("input", function() {
     if ($(this).val()) {
