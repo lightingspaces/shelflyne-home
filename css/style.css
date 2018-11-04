@@ -538,7 +538,7 @@ video::-webkit-media-controls {
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner:after,
 .hamburger.is-active .hamburger-inner:before {
-	background-color: #fff;
+	background-color: #ccc;
 }
 
 .menu {
