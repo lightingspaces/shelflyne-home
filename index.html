@@ -1,6 +1,16 @@
 <!doctype html>
 <html lang="en">
 <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129191943-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-129191943-1');
+	</script>
+
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -8,29 +18,37 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+	<link rel="stylesheet" href="https://cdn.plyr.io/3.4.6/plyr.css">
 	<link rel="stylesheet" type="text/css" href="css/fullpage.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/hamburgers.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css?v=1.0.5.3" />
 
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 
-	<title>Shelflyne | Home</title>
+	<!-- Chrome, Firefox OS, Opera and Vivaldi --><meta name="theme-color" content="#cccccc">
+	<!-- Windows Phone --><meta name="msapplication-navbutton-color" content="#cccccc">
+	<!-- iOS Safari --><meta name="apple-mobile-web-app-status-bar-style" content="cccccc">
+
+	<title>Shelflyne Home</title>
 </head>
 <body>
 	<div id="preloader">
-			<div class="loader"></div>
+		<div class="loader"></div>
 	</div>
 	<!-- slideout menu -->
 	<nav id="menu" class="menu slideout-menu slideout-menu-right">
       <section class="menu-section">
         <h3 class="menu-section-title">Shelflyne | Home</h3>
         <ul class="menu-section-list">
+        	<li><a href="#introduction">Introduction</a></li>
           <li><a href="#no-wiring">No wiring</a></li>
           <li><a href="#no-polarity">No polarity</a></li>
           <li><a href="#easy-installation">Easy installation</a></li>
           <li><a href="#modular-configuration">Modular configuration</a></li>
           <li><a href="#popular-sizing">Popular sizing</a></li>
+          <li><a href="media/Shelflyne_Ordering_Codes.pdf" target="_blank">Ordering codes [PDF]</a></li>
+          <li><a href="media/Shelflyne_Home_Installation_Guide.pdf" target="_blank">Installation guide [PDF]</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </section>
@@ -40,7 +58,7 @@
 		<!-- header -->
 		<header class="fixed-top">
 			<nav class="navbar navbar-dark p-0">
-				<a href="#no-wiring">
+				<a href="/">
 					<span class="rp-branding">
 						<h1 class="sr-only">Shelflyne</h1>
 						<img src="media/logo-inverted.png" />				
@@ -56,7 +74,36 @@
 		</header>
 
 		<div id="fullpage">
-
+			<div class="section" id="home-00">
+				<div class="section-borders">
+					<div class="section-borders-inside">
+						<div class="section-border section-border-right"></div>
+						<div class="section-border section-border-left"></div>
+						<div class="section-border section-border-top"></div>
+						<div class="section-border section-border-bottom"></div>
+					</div>
+					<div class="section-background"></div>
+				</div>
+				<div class="section-content">
+					<div class="container h-100">
+						<div class="row align-items-center h-100">
+							<div class="col">
+								<div class="row">
+									<div class="col-12 order-2 col-lg-5 order-lg-1">
+										<h2>A revolution in joinery lighting</h2>
+										<p>Shelflyne Home makes it easier than ever to install linear LED strip lighting into joinery. Light up any shelving system quickly and affordably with the patented wireless and solder-free LED technology. Simple and easy not just for the end user, but also for installers. A guaranteed a premium finish, every time.</p>
+									</div>
+									<div class="col-12 mb-3 order-1 col-lg-7 order-lg-2">
+										<div class="plyr__video-embed" id="player">
+											<iframe src="https://player.vimeo.com/video/284652743?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media" allowfullscreen allowtransparency></iframe>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 			<div class="section" id="home-01">
 				<div class="section-borders">
 					<div class="section-borders-inside">
@@ -65,15 +112,15 @@
 						<div class="section-border section-border-top"></div>
 						<div class="section-border section-border-bottom"></div>
 					</div>
-					<video class="cover" id="video-1" muted data-autoplay data-keepplaying>
-						<source src="media/no-wiring.mp4" type="video/mp4">
+					<video class="cover" id="video-1" muted data-autoplay autoplay playsinline data-keepplaying>
 						<source src="media/no-wiring.webm" type="video/webm">
+						<source src="media/no-wiring.mp4" type="video/mp4">
 					</video>
 				</div>
 				<div class="section-content">
 					<div class="container h-100">
 						<div class="row align-items-center h-100">
-							<div class="col-10 offset-1 col-lg-5 offset-lg-0">
+							<div class="col-12 col-lg-5">
 								<h2>Say goodbye to soldering and wiring</h2>
 								<p>Shelflyne Home’s revolutionary patented design eliminates the need to soldering and wiring. Simply ensure the powered rail and light align and you’re done. A streamlined time-saving installation process translates to cost savings and zero hassle for installers.</p>
 							</div>
@@ -89,17 +136,17 @@
 						<div class="section-border section-border-top"></div>
 						<div class="section-border section-border-bottom"></div>
 					</div>
-					<video class="cover" id="video-2" muted data-autoplay data-keepplaying>
-						<source src="media/no-polarity.mp4" type="video/mp4">
+					<video class="cover" id="video-2" muted data-autoplay autoplay playsinline data-keepplaying>
 						<source src="media/no-polarity.webm" type="video/webm">
+						<source src="media/no-polarity.mp4" type="video/mp4">
 					</video>
 				</div>
 				<div class="section-content">
 					<div class="container h-100">
 						<div class="row align-items-center h-100">
-							<div class="col-10 offset-1 col-lg-5 offset-lg-0">
+							<div class="col-12 col-lg-5">
 								<h2>Polarity no longer matters</h2>
-								<p>Our patented FLIP technology eliminates polarity issues. Regardless of how the profile is mounted the Light Profile will light up. This translates to a foolproof installation and guarantees a premium finish everytime.</p>
+								<p>Our FLIP technology eliminates polarity issues. Regardless of how the profile is mounted the Light Profile will light up. This translates to a foolproof installation and guarantees a premium finish everytime.</p>
 							</div>
 						</div>
 					</div>
@@ -113,12 +160,15 @@
 						<div class="section-border section-border-top"></div>
 						<div class="section-border section-border-bottom"></div>
 					</div>
-					<div class="section-background"></div>
+					<video class="cover" id="video-3" muted data-autoplay autoplay playsinline data-keepplaying>
+						<source src="media/easy-install.webm" type="video/webm">
+						<source src="media/easy-install.mp4" type="video/mp4">
+					</video>
 				</div>
 				<div class="section-content">
 					<div class="container h-100">
 						<div class="row align-items-center h-100">
-							<div class="col-10 offset-1 col-lg-5 offset-lg-0">
+							<div class="col-12 col-lg-5">
 								<h2>Quick and easy installation</h2>
 								<p>Installation of shelf lighting has never been quicker and easier. Simply route the specified channel depth and width for each component and push in tightly to complete.</p>
 							</div>
@@ -134,14 +184,17 @@
 						<div class="section-border section-border-top"></div>
 						<div class="section-border section-border-bottom"></div>
 					</div>
-					<div class="section-background"></div>
+					<video class="cover" id="video-5" muted data-autoplay autoplay playsinline data-keepplaying>
+						<source src="media/popular-sizing.webm" type="video/webm">
+						<source src="media/popular-sizing.mp4" type="video/mp4">
+					</video>
 				</div>
 				<div class="section-content">
 					<div class="container h-100">
 						<div class="row align-items-center h-100">
-							<div class="col-10 offset-1 col-lg-5 offset-lg-0">
-								<h2>Modular configuration</h2>
-								<p>The modular design allows the light profile to be mounted in either a downlighting, uplighting or side-lighting configuration. Now you can illuminate any space beautifully and seamlessly.</p>
+							<div class="col-12 col-lg-5">
+								<h2>Popular sizing</h2>
+								<p>Shelflyne Home is available in a range of options to suit all popular carcass sizing within Australia. Custom sizing will also be available through Hafele H20 in 2019.</p>
 							</div>
 						</div>
 					</div>
@@ -155,14 +208,17 @@
 						<div class="section-border section-border-top"></div>
 						<div class="section-border section-border-bottom"></div>
 					</div>
-					<div class="section-background"></div>
+					<video class="cover" id="video-4" muted data-autoplay autoplay playsinline data-keepplaying>
+						<source src="media/multi-install.webm" type="video/webm">
+						<source src="media/multi-install.mp4" type="video/mp4">
+					</video>
 				</div>
 				<div class="section-content">
 					<div class="container h-100">
 						<div class="row align-items-center h-100">
-							<div class="col-10 offset-1 col-lg-5 offset-lg-0">
-								<h2>Popular sizing</h2>
-								<p>Shelflyne Home is available in a range of options to suit all popular carcass sizing within Australia. Custom sizing will also be available through Hafele H20 in 2019.</p>
+							<div class="col-12 col-lg-5">
+								<h2>Modular configuration</h2>
+								<p>The modular design allows the light profile to be mounted in either a downlighting, uplighting or side-lighting configuration. Now you can illuminate any space beautifully and seamlessly.</p>
 							</div>
 						</div>
 					</div>
@@ -171,10 +227,13 @@
 			<footer class="section footer fp-auto-height-responsive" id="footer">
 				<div class="section-content">
 					<div class="container h-100 d-flex">
-						<div class="row align-self-center">
-							<div class="col-12 col-lg-4 rp-footer-1">
-								<span>Shelflyne Home is available from Hafele Australia. Please contact your local sale representitive or our customer service line to order. <a href="#">Click here</a> for ordering codes.</span>
+						<div class="row no-gutters align-self-center">
+							<div class="col-12 order-2 col-lg-4 order-lg-1 rp-footer-1">
+								<!-- <a class="btn btn-outline-light btn-block orderingCodes" href="#" data-toggle="modal" data-target="#orderingCodes">Ordering codes</a> -->
+								<a class="btn btn-outline-light btn-block" href="media/Shelflyne_Ordering_Codes.pdf" target="_blank">Ordering codes [PDF]</a>
+								<a class="btn btn-outline-light btn-block" href="media/Shelflyne_Home_Installation_Guide.pdf" target="_blank">Installation guide [PDF]</a>								
 								<span class="rp-footer-logo-1"><img src="media/haefele-logo.png" /></span>
+								<span>Shelflyne Home is available from Hafele Australia. Please contact your local sales representitive or our customer service line to order.</span>
 								<div class="text-center">
 									<span class="rp-footer-logo-2"><img src="media/logo-inverted.png" /></span>
 									<span>designed by</span>
@@ -182,8 +241,8 @@
 								</div>
 							</div>
 
-							<div class="col-12 col-lg-4 rp-footer-2">
-								<form class="rp-contactForm" id="rp-contactForm" action="https://formspree.io/info@hafele.com.au" method="POST">
+							<div class="col-12 order-1 col-lg-4 order-lg-2 rp-footer-2">
+								<form class="rp-contactForm" id="rp-contactForm" action="https://api.formbucket.com/f/buk_57OnaJwPXROg1nLjeVegqDt1" method="post">
 									<div class="form-row">
 										<div class="col">
 											<div class="form-group">
@@ -207,14 +266,12 @@
 												<span class="input-highlight"></span>
 											</div>										
 											<button type="submit" class="btn btn-block">Send</button>
-											<input type="hidden" name="_next" value="#" />
-											<input type="hidden" name="_subject" value="Shelflyne | Home | Form submission" />
 										</div>
 									</div>
 								</form>
 							</div>
 
-							<div class="col-12 col-lg-4 rp-footer-3">
+							<div class="col-12 order-3 col-lg-4 order-lg-3 rp-footer-3">
 								<h4>Phone</h4>
 								<a href="tel:1300659728"><span>1300 659 728</span></a>
 								<h4>Email</h4>
@@ -237,32 +294,79 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+	<script src="https://cdn.plyr.io/3.4.6/plyr.polyfilled.js"></script>
+	<script>
+		const player = new Plyr('#player', {
+			controls: [
+			    'play-large', // The large play button in the center
+			    'play', // Play/pause playback
+			    'progress', // The progress bar and scrubber for playback and buffering
+			    'volume', // Volume control
+			    'fullscreen', // Toggle fullscreen
+			],
+			fullscreen: {enabled: true, fallback: false, iosNative: true}
+		});
+
+		player.on('play', function() {
+            player.fullscreen.enter()
+        });
+	</script>
+
 	<script type="text/javascript" src="js/fullpage.min.js"></script>  
 	<script type="text/javascript" src="js/fullpage.extensions.min.js"></script>
 	<script type="text/javascript" src="js/scrolloverflow.min.js"></script>
 	<script type="text/javascript">
 		var myFullpage = new fullpage('#fullpage', {
 			licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
-			touchSensitivity: 30,
+			touchSensitivity: 5,
+			normalScrollElements: '#orderingCodes',
+			normalScrollElementTouchThreshold: 1,
 			scrollOverflow: true,
 			scrollingSpeed: 1500,
-			anchors: ['no-wiring', 'no-polarity', 'easy-installation', 'modular-configuration', 'popular-sizing', 'contact'],
+			anchors: ['introduction', 'no-wiring', 'no-polarity', 'easy-installation', 'popular-sizing', 'modular-configuration', 'contact'],
 			navigation: true,
 			navigationPosition: 'left',
-			navigationTooltips: ['No wiring', 'No polarity', 'Easy installation', 'Modular configuration', 'Popular sizing', 'Contact'],
+			navigationTooltips: ['Introduction', 'No wiring', 'No polarity', 'Easy installation', 'Popular sizing', 'Modular configuration', 'Contact'],
 			onLeave: function(origin, destination, direction){
 						var leavingSection = this;
 
-						//after leaving section 1
 						if(origin.index === 0){
+							let video = document.getElementById('player');
+							setTimeout(function() {
+						        player.stop();
+						    }, 1500);
+						}
+						//after leaving section 2
+						if(origin.index === 1){
 							let video = document.getElementById('video-1');
 							setTimeout(function() {
 						        video.load();
 						    }, 1500);
 						}
-						//after leaving section 2
-						if(origin.index === 1){
+						//after leaving section 3
+						if(origin.index === 2){
 							let video = document.getElementById('video-2');
+						    setTimeout(function() {
+						        video.load();
+						    }, 1500);
+						}
+						//after leaving section 4
+						if(origin.index === 3){
+							let video = document.getElementById('video-3');
+						    setTimeout(function() {
+						        video.load();
+						    }, 1500);
+						}
+						//after leaving section 5
+						if(origin.index === 4){
+							let video = document.getElementById('video-4');
+						    setTimeout(function() {
+						        video.load();
+						    }, 1500);
+						}
+						//after leaving section 6
+						if(origin.index === 5){
+							let video = document.getElementById('video-5');
 						    setTimeout(function() {
 						        video.load();
 						    }, 1500);
@@ -270,8 +374,6 @@
 					}
 		});
 	</script>
-
-
 
 	<!-- slideout menu -->
 	<script src="js/slideout.min.js"></script>
@@ -281,7 +383,8 @@
 			'menu': document.getElementById('menu'),
 			'padding': 280,
 			'tolerance': 70,
-			'side': 'right'
+			'side': 'right',
+			'touch': false
 		});
 
 		// document.querySelector('.slideout-toggle').addEventListener('click', function() {
@@ -296,34 +399,28 @@
 			slideout.toggle();
 			if(slideout.isOpen()){
 				fullpage_api.setAllowScrolling(false);
+				console.log('scroll false');
 			} else {
 				fullpage_api.setAllowScrolling(true);
+				console.log('scroll true');
 			}
 		});
-
 	</script>
 
-
+	<script>
+		$(document).on('click', '[data-toggle="modal"]', function() {
+		  fullpage_api.setAllowScrolling(false);
+		  fullpage_api.setKeyboardScrolling(false);
+		  console.log('scroll false');
+		});
+		$(document).on('click', '[data-dismiss="modal"]', function() {
+		  fullpage_api.setAllowScrolling(true);
+		  fullpage_api.setKeyboardScrolling(true);
+		  console.log('scroll true');
+		});
+	</script>
 
 	<script src="js/main.js"></script>
- 	
 
-
-
-	<!-- Start of LiveChat (www.livechatinc.com) code -->
-	<!-- <script type="text/javascript">
-	window.__lc = window.__lc || {};
-	window.__lc.license = 10278672;
-	(function() {
-	  var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
-	  lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
-	  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
-	})();
-	</script>
-	<noscript>
-	<a href="https://www.livechatinc.com/chat-with/10278672/">Chat with us</a>,
-	powered by <a href="https://www.livechatinc.com/?welcome" rel="noopener" target="_blank">LiveChat</a>
-	</noscript> -->
-	<!-- End of LiveChat code -->
 </body>
 </html>
