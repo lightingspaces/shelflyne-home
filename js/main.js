@@ -6,7 +6,7 @@
   });
 
   // Detect when form-control inputs are not empty
-  $(".rp-contactForm .form-control").on("input", function() {
+  $(".sh-contactForm .form-control").on("input", function() {
     if ($(this).val()) {
       $(this).addClass("hasValue");
     } else {
