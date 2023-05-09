@@ -18,23 +18,6 @@ menuLinks.forEach(function(menuLink) {
   });
 });
 
-// Plyr
-
-const player = new Plyr('#player', {
-  controls: [
-      'play-large', // The large play button in the center
-      'play', // Play/pause playback
-      'progress', // The progress bar and scrubber for playback and buffering
-      'volume', // Volume control
-      'fullscreen', // Toggle fullscreen
-  ],
-  fullscreen: {enabled: true, fallback: false, iosNative: true}
-});
-
-player.on('play', function() {
-        player.fullscreen.enter()
-    });
-
 // Fullpage
 
 var myFullpage = new fullpage('#fullpage', {
